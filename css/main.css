@@ -7,6 +7,16 @@
     max-width: 1200px;
     margin: 0 auto;
 }
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background-color: white;
+}
+.menu{
+    display: none;
+}
+
 .box{
     padding: 20px 0px;
     display: flex;
@@ -49,6 +59,7 @@ ul a{
 }
 .section1{
     padding-top: 400px;
+    padding-bottom: 100px;
 }
 .box1{
     display: flex;
@@ -229,4 +240,245 @@ ul a{
 }
 .box5_1 p{
     color: #979797;
+}
+
+.section6{
+    background-image: url(../imgs/Rectangle\ 3.png);
+    padding-top: 90px;
+    background-repeat: no-repeat;
+    padding-bottom: 90px;
+    background-size: 100%;
+}
+.box6{
+    color: white;
+    text-align: center;
+}
+.box6_1 p{
+    font-size: 32px;
+}
+.box6_1 h1{
+    font-size: 56px;
+}
+
+.section7 h1{
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 48px;
+    color: #A55C30;
+}
+.section7{
+    padding-top: 50px;
+    background-color: #fafafa;
+    padding-bottom: 50px;
+}
+.box7{
+    background-color: #E8EAEC;
+    width: 700px;
+    text-align: center;
+    margin-left: 250px;
+    padding-bottom: 50px;
+    /* text-align: center; */
+
+    
+}
+.section7 .container .box7{
+    padding-left: 00px;
+}
+
+.box7_1{
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 100px;
+}
+.box7 input{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 70px;
+    margin-top: 20px;
+    border: none;
+}
+.box7 input:nth-child(4){
+    padding-bottom: 80px;
+    
+}
+.box7 button{
+    padding: 8px 50px ;
+    text-align: center;
+    color: white;
+    background-color: #A55C30;
+    border: none;
+    margin-top: 15px;
+    font-size: 13px;
+}
+footer{
+    background-color: #0C0C0C;
+    color: white;
+    padding-top: 50px;
+}
+.box8{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.box8_1{
+    width: 260px;
+}
+.box8_1 div{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.box8_2{
+    width: 400px;
+    text-align: center;
+}
+.box8_2 h2{
+    color: #A55C30;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.box8_2 p{
+    padding-bottom: 20px;
+}
+.box8_2 input{
+    padding:6px 0;
+    padding-left: 5px;
+    border: none;
+}
+.box8_2 button{
+    padding: 6px 15px;
+    color:white;
+    background-color: #A55C30;
+    border: none;
+}
+.box8_2 form{
+    padding-bottom: 40px;
+}
+.box8_2 div i{
+    padding: 0px 10px;
+}
+
+
+.box8_3{
+    width: 230px;
+    align-items: center;
+}
+.box8_3 div{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding-top: 15px;
+}
+.box8_3 h2{
+    color: #A55C30;
+    text-align: center;
+}
+.chiziq2{
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+.oxiri h5{
+    padding:20px 0px ;
+    text-align: center;
+}
+
+
+@media(max-width:480px){
+
+    .links0{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .heroimg{
+        display: none;
+    }
+    .hero{
+        
+        background-image: url(../imgs/mobil_img.png);
+        background-repeat: no-repeat;
+        width: 100%;
+        position: absolute;
+        background-size: 100%;
+       
+        top: 250px;
+    }
+    .hero h1{
+        /* position: absolute; */
+        top: 0px;
+        font-size: 32px;
+        width: 229px;
+    }
+    nav{
+        padding-left: 20px !important ;
+        padding-right: 20px !important;
+    }
+    .chiziq{
+     
+        height:184px;        
+    }
+    .hero_box{
+        display: flex;
+        gap: 10px;
+        padding-left: 20px !important ;
+        padding-top: 0px;
+        padding-bottom: 480px;
+        
+
+    }
+    .section1{
+        padding-left: 20px !important ;
+        padding-right: 20px !important;
+    }
+    .box1_1 img{
+        width: 100%;
+    }
+    .box1{
+        padding-top: 550px;
+
+    }
+    .box1_2{
+        text-align: center;
+        line-height:30px ;
+        padding-top: 20px;
+    }
+    .box2{
+        padding-left: 20px !important ;
+        padding-right: 20px !important;
+    }
+    .box2_1{
+        text-align: center;
+        width: 100%;
+        padding-top: 50px;
+    }
+    .section3{
+        padding-left: 20px !important ;
+        padding-right: 20px !important;
+    }
+    .box3_1{
+        width: 100%;
+        margin-top: 30px;
+    }
+   .icon3{
+    display: none;
+   }
+   .section5{
+    padding-left: 20px !important ;
+    padding-right: 20px !important;
+   }
+   .box5_1{
+    /* text-align: center; */
+    width: 100%;
+   }
+   .box5_2 p{
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+   }
+  
 }

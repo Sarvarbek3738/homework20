@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
 }
 .container{
     max-width: 1200px;
@@ -22,6 +24,12 @@ nav{
     display: flex;
     justify-content: space-between;
 }
+.logo{
+    transition: all .5s ease;
+}
+.logo:hover{
+    transform: scale(1.3);
+}
 .links{
     display: flex;
     gap: 50px;
@@ -33,6 +41,42 @@ ul a{
     text-decoration: none;
     color: #232730;
 }
+.links li a{
+    color: gray;
+    text-decoration: none;
+    font-size: 14px;
+}
+.links li{
+    transition: all .5s ease;
+}
+.links li:hover{
+    transform: scale(1.4);
+}
+.links a:hover{
+    color: #A55C30;
+}
+.links li{
+    position: relative;
+}
+.links li::after{
+    position: absolute;
+    content: "";
+    bottom: -2px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+    background-color: #A55C30;
+    transition: all .8s ease;
+
+}
+.links li:hover::after{
+    width: 100%;
+    height: 1px;
+    background-color: #A55C30;
+}
+
+
+
 .heroimg{
     position: absolute;
     width: 60%;
@@ -67,6 +111,12 @@ ul a{
     align-items: center;
     flex-wrap: wrap;
 }
+.box1_1 img{
+    transition: all .5s ease;
+}
+.box1_1 img:hover{
+    transform: scale(1.05);
+}
 
 .box1_2{
     width: 480px;
@@ -75,6 +125,11 @@ ul a{
     padding-bottom: 20px;
     font-size: 42px;
     color: #A55C30;
+}
+.box1_2 p{
+    font-size: 18px;
+    line-height: 30px;
+
 }
 .section2{
     background-image: url(../imgs/s.png);
@@ -141,7 +196,11 @@ ul a{
     padding: 10px 20px;
     padding-top: 30px;
     object-fit: contain;
-    
+    transition: all .5s ease;
+}
+.box3_1:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px gray;
 }
 .text3{
     text-align: center;
@@ -186,6 +245,10 @@ ul a{
 }
 .box4_1{
     text-align: center;
+    transition: all .5s ease;
+}
+.box4_1:hover{
+    transform: scale(1.2);
 }
 
 .box4_1 h1{
@@ -244,14 +307,15 @@ ul a{
 
 .section6{
     background-image: url(../imgs/Rectangle\ 3.png);
-    padding-top: 90px;
+    padding-top: 100px;
     background-repeat: no-repeat;
-    padding-bottom: 90px;
+    padding-bottom: 100px;
     background-size: 100%;
 }
 .box6{
     color: white;
     text-align: center;
+    align-items: center;
 }
 .box6_1 p{
     font-size: 32px;
@@ -286,6 +350,7 @@ ul a{
 }
 
 .box7_1{
+    width:720px ;
     padding-left: 200px;
     padding-right: 200px;
     padding-top: 100px;
@@ -297,6 +362,15 @@ ul a{
     padding-right: 70px;
     margin-top: 20px;
     border: none;
+}
+.box7 select{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 100px;
+    margin-top: 20px;
+    border: none;
+    color: gray;
 }
 .box7 input:nth-child(4){
     padding-bottom: 80px;
@@ -310,6 +384,10 @@ ul a{
     border: none;
     margin-top: 15px;
     font-size: 13px;
+    transition: all .5s ease;
+}
+.box7_1 button:hover{
+    transform: scale(1.2);
 }
 footer{
     background-color: #0C0C0C;
@@ -328,7 +406,7 @@ footer{
 }
 .box8_1 div{
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
 }
 
 .box8_2{
@@ -353,24 +431,43 @@ footer{
     color:white;
     background-color: #A55C30;
     border: none;
+    transition: all .5s ease;
+}
+.box8_2 button:hover{
+    transform: scale(1.2);
 }
 .box8_2 form{
     padding-bottom: 40px;
 }
-.box8_2 div i{
+.icon_ox i{
     padding: 0px 10px;
+    transition: all .5s ease;
 }
-
+.icon_ox{
+    text-align: center;
+    padding-bottom: 20px;
+    transition: all .5s ease;
+}
+.icon_ox i:hover{
+    transform: scale(2);
+    color: #A55C30;
+}
 
 .box8_3{
     width: 230px;
     align-items: center;
+    cursor: pointer;
 }
 .box8_3 div{
     display: flex;
     gap: 15px;
     align-items: center;
     padding-top: 15px;
+    transition: all .5s ease;
+}
+.box8_3 div:hover{
+    transform: scale(1.2);
+    color: #A55C30;
 }
 .box8_3 h2{
     color: #A55C30;
@@ -471,6 +568,9 @@ footer{
     padding-left: 20px !important ;
     padding-right: 20px !important;
    }
+   .box5{
+        flex-direction: column-reverse;
+   }
    .box5_1{
     /* text-align: center; */
     width: 100%;
@@ -479,6 +579,58 @@ footer{
     width: 100%;
     font-size: 14px;
     line-height: 20px;
+    text-align: center;
    }
-  
+   .box5_2{
+    width: 100%;
+   }
+  .section7{
+    padding-left: 20px !important ;
+    padding-right: 20px !important;
+  }
+  .box7{
+    width: 100%;
+    padding-right: 200px;
+  }
+  .box8{
+    padding-left: 20px !important ;
+    padding-right: 20px !important;
+  }
+  .box8_1{
+    text-align: center;
+    width: 100%;
+  }
+  .box8_2{
+    padding-top: 40px;
+    text-align: center;
+    width: 100%;
+  }
+  .box8_3{
+    padding-top: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   
+  }
+  .section6{
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 70px !important ;
+    padding-right: 70px !important;
+  }
+  .box6_1 p{
+    font-size: 15px;
+  }
+  .box6_1 h1{
+    font-size: 25px;
+  }
+  .box7{
+    margin-left: 0px;
+  }
+  .box7_1{
+    width: 343px;
+    padding-left: 80px !important ;
+    padding-right: 20px !important;
+  }
 }
